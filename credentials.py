@@ -22,3 +22,8 @@ def append_cred(self):
 def generate_password(cls,length):
     characters = string.ascii_letters + string.ascii_lowercase + string.ascii_uppercase + string.digits
     return "".join(random.choice(characters)for i in range(length))
+
+y = Credentials("twitter","sweet","@#$%")
+print(y)
+z = y.generate_password(32)
+print(z)
