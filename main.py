@@ -25,7 +25,10 @@ def main():
             print("welcome")
             username = input("enter your username: ")
             password = input("enter your password: ")
-            save_user = (username, password)
+            save_user(create_user (username, password))
+
+            print("loading...")
+            print(f"Congrats {username}, your account was logged")
         elif user_choice == 'x':
             print("bye")
             break
